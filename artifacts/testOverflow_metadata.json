@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "add1",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "add2",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "sub1",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testOverflow.sol": "testOverflow"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"testOverflow.sol": {
+			"keccak256": "0x74e0f17f15ce2f36303b3cc12bd070f81d2352ec09635a5ab7f1bf51f1fdcb3d",
+			"urls": [
+				"bzz-raw://46e1fd08a5728c455b6403b2711ca23e66725007e697d31e058b9a7b010e0323",
+				"dweb:/ipfs/QmXSxKrhJiQwyrcNcYp9kw6RLjFNz8Xr56viz1D6iqd98i"
+			]
+		}
+	},
+	"version": 1
+}
