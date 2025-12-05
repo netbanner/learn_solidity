@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "addresses",
+						"type": "address[]"
+					}
+				],
+				"name": "batchAddWhitelist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "accounts",
+						"type": "address[]"
+					}
+				],
+				"name": "batchCheckWhitelist",
+				"outputs": [
+					{
+						"internalType": "bool[]",
+						"name": "results",
+						"type": "bool[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWhitelistArray",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWhitelistLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "addresses",
+						"type": "address[]"
+					}
+				],
+				"name": "hasDuplicate",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isWhitelisted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "input",
+						"type": "uint256[]"
+					}
+				],
+				"name": "revertArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "reversed",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "array",
+						"type": "address[]"
+					}
+				],
+				"name": "sumEvenAddresses",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "evenSum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "numbers",
+						"type": "uint256[]"
+					}
+				],
+				"name": "sumEvenNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "evenSum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"batchCheckWhitelist(address[])": {
+					"details": "批量检查地址是否在白名单中",
+					"params": {
+						"accounts": "要检查的地址数组"
+					},
+					"returns": {
+						"results": "检查结果数组"
+					}
+				},
+				"getWhitelistArray()": {
+					"details": "获取白名单数组（优化版本，避免复制大数组）",
+					"returns": {
+						"_0": "白名单地址数组"
+					}
+				},
+				"getWhitelistLength()": {
+					"details": "获取白名单长度",
+					"returns": {
+						"_0": "白名单长度"
+					}
+				},
+				"isWhitelisted(address)": {
+					"details": "优化的白名单检查（使用mapping，O(1)复杂度）",
+					"params": {
+						"account": "要检查的地址"
+					},
+					"returns": {
+						"_0": "isWhitelisted 是否在白名单中"
+					}
+				},
+				"revertArray(uint256[])": {
+					"details": "优化的数组反转函数（减少内存分配）",
+					"params": {
+						"input": "输入数组"
+					},
+					"returns": {
+						"reversed": "反转后的数组"
+					}
+				},
+				"sumEvenAddresses(address[])": {
+					"details": "计算数组中所有偶数地址的和（将地址转换为uint256处理）",
+					"params": {
+						"array": "要计算的地址数组"
+					},
+					"returns": {
+						"evenSum": "偶数地址的和"
+					}
+				},
+				"sumEvenNumbers(uint256[])": {
+					"details": "计算数组中所有偶数（数值数组）的和",
+					"params": {
+						"numbers": "数值数组"
+					},
+					"returns": {
+						"evenSum": "偶数的和"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"base1/whileAddress.sol": "whileAddressContract"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"base1/whileAddress.sol": {
+			"keccak256": "0xadcb9c8c72eda217fdb750b602a4e9f5992126b1d774a328f18a602da8d619b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ff77aa638ba236ca0c3495c1b9f96a4815b18ea22eaf507f67eb5dbe1e9b655",
+				"dweb:/ipfs/QmbsUQ15QSNoxkEj6U2TwyNeP2NV51YwNReMWafRhfBycf"
+			]
+		}
+	},
+	"version": 1
+}

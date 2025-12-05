@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"base2/Bank.sol": "Bank"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"base2/Bank.sol": {
+			"keccak256": "0x9e2a2c990c26f07c8edaa63c7eb1ed5cc298762da61a1c3570a50d4aa18c9ecd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af481bb72685e7268d9e7bdbc59d05798841885fa2ee11c4c0bb12d169a5c714",
+				"dweb:/ipfs/QmbJVpyz4t1sgBeTbQA9GaA1w1UbbYHJciVUckv8QQb4Ld"
+			]
+		},
+		"base2/IBank.sol": {
+			"keccak256": "0x2fd6f5922420294b30fdbdf75f829e017a430663337db9693606214d37b7f082",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d1676ee489d7fbbf92d8804108a861dc29b5e28ee0ad596f50759bcd0e8a250d",
+				"dweb:/ipfs/QmNfLawX4zvsajQUw5ZNapiov5RPHhK7u2Ba3z47Gk7jif"
+			]
+		}
+	},
+	"version": 1
+}
