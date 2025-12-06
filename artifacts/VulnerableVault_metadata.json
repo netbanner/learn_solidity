@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"base2/VulnerableVaultDemo.sol": "VulnerableVault"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"base2/VulnerableVaultDemo.sol": {
+			"keccak256": "0xb86fa05c714e4f0b5f36c4a522c89b49b59239b2d09102f8b02ece80bf85d0ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86cd5315d022ee46fbe1a47e917211a70606a5fbb8d2dfc2299181fff710317a",
+				"dweb:/ipfs/QmRGgzLujeunbH6qT4vQqknMZizBQ32zrcChWfMzEWWpQS"
+			]
+		}
+	},
+	"version": 1
+}

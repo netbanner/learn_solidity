@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_target",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "target",
+				"outputs": [
+					{
+						"internalType": "contract VulnerableVault",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"base2/Attacker.sol": "Attacker"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"base2/Attacker.sol": {
+			"keccak256": "0x3a03eadee516256107a61f7bdaabcf5463d431500af4ca1e0e4360d2ed2594f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3954cf5088587375ca5d74f737a12da9b8a355cfb9f9c14f56c8005aedb2d08a",
+				"dweb:/ipfs/QmY163Ngabk2P5ma5kB7oEtMy65pjqMcNPUTyw98zBEJ4Z"
+			]
+		},
+		"base2/VulnerableVaultDemo.sol": {
+			"keccak256": "0xb86fa05c714e4f0b5f36c4a522c89b49b59239b2d09102f8b02ece80bf85d0ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86cd5315d022ee46fbe1a47e917211a70606a5fbb8d2dfc2299181fff710317a",
+				"dweb:/ipfs/QmRGgzLujeunbH6qT4vQqknMZizBQ32zrcChWfMzEWWpQS"
+			]
+		}
+	},
+	"version": 1
+}
